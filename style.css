@@ -113,7 +113,7 @@ a {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("C:/Users/Александра/Desktop/index/zoo.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./zoo.jpg") center/cover no-repeat;
     height: 100vh;
     min-height: 600px;
     display: flex;
