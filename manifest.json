@@ -1,0 +1,16 @@
+{
+  "name": "Городской Зоопарк",
+  "short_name": "Зоопарк",
+  "description": "Приложение для покупки билетов в городской зоопарк",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFDA63",
+  "theme_color": "#E6B800",
+  "icons": [
+    {
+      "src": "zoo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

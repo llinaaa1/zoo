@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Городской Зоопарк</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#E6B800">
+</head>
+<body>
+     <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Городской Зоопарк</h1>
+                <p>Откройте для себя мир дикой природы</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#animals">Животные</a></li>
+                    <li><a href="#excursions">Экскурсии</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li><a href="tickets.html">Купить билеты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Добро пожаловать в наш зоопарк!</h2>
+            <p>Более 500 видов животных со всего мира</p>
+            <a href="tickets.html" class="btn">Купить билеты онлайн</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <img src="animals.png" alt="Животные">
+                    <h3>500+ видов</h3>
+                    <p>От маленьких лемуров до огромных слонов</p>
+                </div>
+                <div class="feature">
+                    <img src="nature.png" alt="Природа">
+                    <h3>Просторные вольеры</h3>
+                    <p>Условия, максимально приближенные к естественным</p>
+                </div>
+                <div class="feature">
+                    <img src="education.png" alt="Образование">
+                    <h3>Образовательные программы</h3>
+                    <p>Интересные экскурсии для всех возрастов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="animals" class="animals-section">
+        <div class="container">
+            <h2>Наши животные</h2>
+            <div class="animals-grid">
+                <div class="animal-card">
+                    <div class="animal-image" style="background-image: url('leo.png');"></div>
+                    <h3>Львы</h3>
+                    <p>Короли саванны. Наши львы содержатся в просторном вольере с имитацией естественной среды обитания.</p>
+                </div>
+                <div class="animal-card">
+                    <div class="animal-image" style="background-image: url('panda.png');"></div>
+                    <h3>Большие панды</h3>
+                    <p>Наши редкие панды - гордость зоопарка. За ними можно наблюдать в специальном павильоне.</p>
+                </div>
+                <div class="animal-card">
+                    <div class="animal-image" style="background-image: url('giraffe.png');"></div>
+                    <h3>Жирафы</h3>
+                    <p>Самое высокое наземное животное. У нас живет семейство из 5 особей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="excursions" class="excursions-section">
+        <div class="container">
+            <h2>Экскурсии и программы</h2>
+            <div class="excursions-grid">
+                <div class="excursion-card">
+                    <h3>Обзорная экскурсия</h3>
+                    <p>1.5-часовая прогулка по зоопарку с гидом. Познакомьтесь с самыми интересными обитателями.</p>
+                    <ul>
+                        <li>Продолжительность: 1.5 часа</li>
+                        <li>Стоимость: 300 руб./чел.</li>
+                        <li>Группы до 15 человек</li>
+                    </ul>
+                </div>
+                <div class="excursion-card">
+                    <h3>Детская программа</h3>
+                    <p>Интерактивное знакомство с животными для детей 5-12 лет. Включает кормление некоторых животных.</p>
+                    <ul>
+                        <li>Продолжительность: 2 часа</li>
+                        <li>Стоимость: 500 руб./реб.</li>
+                        <li>Группы до 10 детей</li>
+                    </ul>
+                </div>
+                <div class="excursion-card">
+                    <h3>Вечерний зоопарк</h3>
+                    <p>Эксклюзивная экскурсия после закрытия. Увидьте, как ведут себя животные в вечернее время.</p>
+                    <ul>
+                        <li>Продолжительность: 2 часа</li>
+                        <li>Стоимость: 1000 руб./чел.</li>
+                        <li>Только по предварительной записи</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts-section">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <h3>Как нас найти</h3>
+                    <p>г. Москва, ул. Зоологическая, 1</p>
+                    <p>Ближайшая станция метро: "Зоопарк"</p>
+                    <p>Автобусы: 12, 45, 89 до остановки "Городской зоопарк"</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Часы работы</h3>
+                    <p>Ежедневно с 9:00 до 19:00</p>
+                    <p>Кассы работают до 18:00</p>
+                    <p>Санитарный день: первый понедельник месяца</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Контакты</h3>
+                    <p>Телефон: +7 (495) 123-45-67</p>
+                    <p>Email: info@cityzoo.ru</p>
+                    <p>Для экскурсий: +7 (495) 123-45-68</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Городской Зоопарк.</p>
+            <p>г. Москва, ул. Зоологическая, 1 | Телефон: +7 (495) 123-45-67</p>
+        </div>
+    </footer>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => console.log('ServiceWorker registration successful'))
+        .catch(err => console.log('ServiceWorker registration failed: ', err));
+    });
+  }
+</script>
+</body>
+</html>

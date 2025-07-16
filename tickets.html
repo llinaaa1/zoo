@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Городской Зоопарк | Билеты</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="tickets.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Городской Зоопарк</h1>
+                <p>Откройте для себя мир дикой природы</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Животные</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Экскурсии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="tickets.html" class="active">Купить билеты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ticket-section">
+            <div class="container">
+                <h2>Купить билеты онлайн</h2>
+
+                <div class="ticket-form-container">
+                    <form class="ticket-form">
+
+                        <div class="form-group">
+                            <label for="ticket-type">Тип билета:</label>
+                            <select id="ticket-type" name="ticket-type" required>
+                                <option value="">Выберите тип билета</option>
+                                <option value="adult">Взрослый (800 руб.)</option>
+                                <option value="child">Детский (500 руб.)</option>
+                                <option value="family">Семейный (2+2) (2000 руб.)</option>
+                                <option value="discount">Льготный (400 руб.)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visit-date">Дата посещения:</label>
+                            <input type="date" id="visit-date" name="visit-date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Количество:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Дополнительные услуги:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="excursion" name="excursion">
+                                <label for="excursion">Экскурсия (+300 руб.)</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="feeding" name="feeding">
+                                <label for="feeding">Кормление животных (+500 руб.)</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" title="Пожалуйста, введите 10 цифр номера телефона.">
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">Оформить заказ</button>
+                    </form>
+
+                    <div class="ticket-info">
+                        <h3>Информация о билетах</h3>
+                        <ul>
+                            <li>Билеты действительны только на выбранную дату</li>
+                            <li>Дети до 3 лет - бесплатно</li>
+                            <li>Льготы предоставляются при предъявлении документа</li>
+                            <li>Отмена заказа возможна за 24 часа до посещения</li>
+                        </ul>
+                        <div class="ticket-prices">
+                            <h4>Часы работы:</h4>
+                            <p>Ежедневно с 9:00 до 19:00</p>
+                            <p>Кассы закрываются в 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2023 Городской Зоопарк. Все права защищены.</p>
+            <p>г. Москва, ул. Зоологическая, 1 | Телефон: +7 (495) 123-45-67</p>
+        </div>
+    </footer>
+
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+           
+            const styleSheetExists = document.querySelector('link[href="css/style.css"]');
+            const ticketStyleSheetExists = document.querySelector('link[href="css/tickets.css"]');
+
+            if (!styleSheetExists) {
+                console.warn('Основной CSS (style.css) не найден!');
+                document.head.insertAdjacentHTML('beforeend', '<style>body { font-family: Arial, sans-serif; }</style>'); // Fallback
+            }
+            if (!ticketStyleSheetExists) {
+                 console.warn('CSS для билетов (tickets.css) не найден!');
+                 
+            }
+        });
+    </script>
+</body>
+</html>
